@@ -3,7 +3,8 @@ import requests
 import pandas as pd
 import gradio as gr
 
-BACKEND_URL = "http://127.0.0.1:8000"
+import os
+BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
 
 def upload_resume(pdf):
 
@@ -461,4 +462,7 @@ with gr.Blocks(
                 stored_results
             )
 
-demo.launch()
+demo.launch(
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 7860))
+)

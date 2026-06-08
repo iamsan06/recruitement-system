@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# FastAPI
+*.db
+*.sqlite3
+
+# Uploaded Files (if ever used locally)
+uploads/
+
+# Model Files
+models/
+checkpoints/
+
+# HuggingFace Cache
+.cache/
+huggingface/
+
+# Sentence Transformers Cache
+sentence_transformers/
+
+# Supabase Local
+.supabase/
+
+# Docker
+docker-compose.override.yml
+
+# Secrets
+secrets.json
+credentials.json
+service-account.json
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+
+# Mac/Linux
+*.swp

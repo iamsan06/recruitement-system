@@ -1,5 +1,5 @@
-from src.database import SessionLocal
-from src.models import ResumeChunk
+from backend.src.database import SessionLocal
+from backend.src.models import ResumeChunk
 
 
 def save_chunks(

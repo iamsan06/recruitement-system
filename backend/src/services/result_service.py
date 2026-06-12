@@ -1,6 +1,6 @@
-from src.database import SessionLocal
+from backend.src.database import SessionLocal
 
-from src.models import (
+from backend.src.models import (
     JobCandidate
 )
 

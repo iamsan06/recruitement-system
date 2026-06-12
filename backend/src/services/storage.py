@@ -1,5 +1,5 @@
-from src.database import SessionLocal
-from src.models import Candidate
+from backend.src.database import SessionLocal
+from backend.src.models import Candidate
 
 
 def save_candidate(candidate_data):

@@ -1,6 +1,6 @@
-from src.database import SessionLocal
-from src.models import Job
-from src.services.job_parser import (
+from backend.src.database import SessionLocal
+from backend.src.models import Job
+from backend.src.services.job_parser import (
     parse_job_description
 )
 

@@ -7,35 +7,35 @@ from fastapi import (
 
 from uuid import uuid4
 
-from src.services.pdf_parser import extract_text
+from backend.src.services.pdf_parser import extract_text
 
-from src.services.llm_parser import (
+from backend.src.services.llm_parser import (
     parse_candidate_with_llm
 )
 
-from src.services.storage import (
+from backend.src.services.storage import (
     save_candidate
 )
 
-from src.services.supabase_storage import (
+from backend.src.services.supabase_storage import (
     upload_pdf
 )
 
-from src.services.candidate_service import (
+from backend.src.services.candidate_service import (
     get_all_candidates,
     get_candidate_by_id,
     delete_candidate
 )
 
-from src.services.chunking_service import (
+from backend.src.services.chunking_service import (
     chunk_resume
 )
 
-from src.services.embedding_service import (
+from backend.src.services.embedding_service import (
     generate_embedding
 )
 
-from src.services.chunk_storage import (
+from backend.src.services.chunk_storage import (
     save_chunks
 )
 

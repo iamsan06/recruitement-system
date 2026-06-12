@@ -3,16 +3,16 @@ import json
 
 from sqlalchemy import text
 
-from src.database import SessionLocal
-from src.models import Candidate
-from src.services.embedding_service import generate_embedding
-from src.services.explanation_service import generate_match_explanation
-from src.services.scoring_service import (
+from backend.src.database import SessionLocal
+from backend.src.models import Candidate
+from backend.src.services.embedding_service import generate_embedding
+from backend.src.services.explanation_service import generate_match_explanation
+from backend.src.services.scoring_service import (
     skill_match_score,
     experience_score,
     certification_score
 )
-from src.services.result_service import save_results
+from backend.src.services.result_service import save_results
 
 
 def match_job(job):

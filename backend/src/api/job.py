@@ -3,23 +3,23 @@ from fastapi import (
     HTTPException
 )
 
-from src.schemas.job_schema import (
+from backend.src.schemas.job_schema import (
     JobCreate,
     JobResponse
 )
 
-from src.services.job_service import (
+from backend.src.services.job_service import (
     create_job,
     get_all_jobs,
     get_job_by_id,
     delete_job
 )
 
-from src.services.matching_service import (
+from backend.src.services.matching_service import (
     match_job
 )
 
-from src.services.result_service import (
+from backend.src.services.result_service import (
     get_results
 )
 

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from src.api.resume import router as resume_router
-from src.api.job import router as job_router
+from backend.src.api.resume import router as resume_router
+from backend.src.api.job import router as job_router
 
 app = FastAPI()
 

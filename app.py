@@ -1,7 +1,9 @@
 import json
+import threading
 import requests
 import pandas as pd
 import gradio as gr
+import uvicorn
 
 import os
 BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
@@ -461,6 +463,18 @@ with gr.Blocks(
                 result_job_id,
                 stored_results
             )
+
+def run_api():
+    uvicorn.run(
+        "backend.src.main:app",
+        host="0.0.0.0",
+        port=8000
+    )
+
+threading.Thread(
+    target=run_api,
+    daemon=True
+).start()
 
 demo.launch(
     server_name="0.0.0.0",

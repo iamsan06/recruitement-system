@@ -12,7 +12,7 @@ pinned: false
 
 # AI Recruitement System: Retrieval-Augmented Resume Screening Platform
 
-TalentMatch is an AI-powered recruitment intelligence platform that automates resume screening, candidate ranking, and job matching using retrieval-augmented techniques and large language models.
+An AI-powered recruitment intelligence platform that automates resume screening, candidate ranking, and job matching using retrieval-augmented techniques and large language models.
 
 Instead of relying solely on keyword filtering, the system combines semantic retrieval, structured information extraction, dynamic scoring, and evidence-based reasoning to identify the most relevant candidates for a role.
 
